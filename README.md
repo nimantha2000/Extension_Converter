@@ -1,28 +1,27 @@
-# Python Extension Converter
+# Image Format Converter
 
 ## Overview
-This Python Extension Converter is a command-line tool designed to convert all files in a folder from one extension to another. It allows users to specify the source and destination extensions, and then converts all files with the source extension to the destination extension.
+This Python script converts images from one format to another. It utilizes the Python Imaging Library (PIL) to open and save images.
 
 ## Features
-- **Bulk Conversion**: Converts multiple files in a folder from one extension to another.
-- **User Input**: Allows users to specify the source and destination extensions.
-- **File Integrity**: Ensures that original files are preserved and converted files are created with the new extension.
+- **Bulk Conversion**: Converts multiple images in a directory from one format to another.
+- **Error Handling**: Provides error handling for cases where images cannot be opened or saved.
+- **User-Friendly**: Simple to use, no complex configurations required.
 
 ## Usage
-1. Clone or download the repository.
-2. Navigate to the project directory in your terminal or command prompt.
-3. Run the script with Python:
+1. Clone or download the script.
+2. Ensure you have Python installed on your system.
+3. Install the required dependencies using pip:
 
-4. Follow the on-screen instructions to input the source and destination extensions.
-5. The script will then proceed to convert all files with the source extension to the destination extension.
-
-## Example
-Suppose you want to convert all `.jpg` files in a folder to `.png` files:
-
-The script will find all `.jpg` files in the folder and convert them to `.png` files.
+4. Place the script in the directory containing the images you want to convert.
+5. Open a terminal or command prompt and navigate to the directory containing the script.
+6. Modify the `convert_images` function call at the end of the script with the desired source and target extensions.
+7. Run the script:
+8. The script will automatically convert all images from the source format to the target format in the same directory.
 
 ## Requirements
 - Python 3.8
+- Pillow library (installed via `pip install Pillow`)
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
@@ -40,4 +39,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Nimantha Kasun](https://github.com/nimantha2000) - Lead Developer
 
 ## Acknowledgments
+- [Python Imaging Library (PIL)](https://pillow.readthedocs.io/en/stable/) - Used for image processing
 
